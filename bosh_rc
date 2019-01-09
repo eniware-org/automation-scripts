@@ -1,0 +1,3 @@
+export BOSH_CLIENT=admin
+export BOSH_CLIENT_SECRET="$(bosh int ~/bosh-1/director-creds.yml --path /admin_password)"
+export BOSH_CA_CERT="$(bosh interpolate ~/bosh-1/director-creds.yml --path /director_ssl/ca)"
