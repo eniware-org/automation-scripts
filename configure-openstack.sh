@@ -14,7 +14,7 @@ openstack flavor create --vcpus 4 --ram 31232 --disk 3 --ephemeral 100 small-hig
 openstack flavor create --vcpus 8 --ram 16384 --disk 160 --ephemeral 0 m1.xlarge
 openstack domain create cf_domain
 openstack project create cloudfoundry --domain cf_domain
-openstack user create eniware --domain cf_domain --project cloudfoundry --password Eniware8
+openstack user create eniware --domain cf_domain --project cloudfoundry --password password
 openstack role add --project cloudfoundry --project-domain cf_domain --user eniware --user-domain cf_domain Member
 cd openstack-bundles/stable/openstack-base/
 ./neutron-ext-net-ksv3 --network-type flat -g 192.168.40.1 -c 192.168.40.0/24 -f 192.168.40.190:192.168.40.254 ext_net
