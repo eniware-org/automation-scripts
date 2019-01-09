@@ -12,6 +12,9 @@ download-repos.sh - downloads TerraForm, TerraForm scripts for the second and
 
 deploy-bosh-cf.sh - deploys BOSH Director, configure it, deploy CF.
 
+NB: Edit configure-openstack.sh and deploy-bosh-ch.sh to set your desired password.
+The current values for all password is "password"
+
 Run configure-openstack.sh and download-repos.sh(doesn't matter which is first).
 Run the terraform scripts:
 >cd ~/terraform
